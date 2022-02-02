@@ -18,19 +18,21 @@ public class Metodos {
         //for (int i = 0; i < listaAlumnos.length; i++) {
         //  System.out.println("Nome: " + listaAlumnos.toString() + " --> " );
         //}
-        for (Alumnado al : listaAlumnos){
-            JOptionPane.showMessageDialog(null, al);}
+        for (Alumnado al : listaAlumnos) {
+            JOptionPane.showMessageDialog(null, al);
+        }
         //Tamen JOptionPane.showMessageDialog(null, listaAlumnos);
 
     }
-    public static int buscarArray (Alumnado[]listaAlumnos){
+
+    public static int buscarArray(Alumnado[] listaAlumnos) {
         String alumBuscar = JOptionPane.showInputDialog("Teclea nome a buscar");
         int atopado = 0; //non está
         int posicion = 0;
         for (int i = 0; i < listaAlumnos.length; i++) {
             listaAlumnos[i] = new Alumnado();
             if (alumBuscar.equals(listaAlumnos[i])) {
-                System.out.println(("A nota de " +alumBuscar + " é "+ listaAlumnos[i]));
+                System.out.println(("A nota de " + alumBuscar + " é " + listaAlumnos[i]));
                 posicion = i;
                 atopado = 1;
                 break;

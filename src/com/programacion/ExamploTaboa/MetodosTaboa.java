@@ -59,7 +59,7 @@ public class MetodosTaboa {
             for (int columna = 0; columna < taboa[fila].length; columna++) {
                 System.out.print(taboa[fila][columna] + "      ");
             }
-            System.out.print("      "+total[fila]);
+            System.out.print("      " + total[fila]);
         }
     }
 }
