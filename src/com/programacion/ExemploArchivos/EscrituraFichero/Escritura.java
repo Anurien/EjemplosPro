@@ -4,8 +4,9 @@ import com.programacion.ExemploArchivos.LecturaFichero.Lectura;
 import com.programacion.ExemploArchivos.Xogador;
 
 import java.io.*;
+import java.util.ArrayList;
 
-public class Escritura {
+public class  Escritura {
     FileWriter fich;
     PrintWriter escribir;
     BufferedWriter bf;
@@ -88,12 +89,16 @@ public class Escritura {
             }
         }
     }
-    public void escribirObxectos1 (String nomeFich, Lectura lectura, File fichero){
+    public void escribirObxectos1 (String nomeFich, File fichero){
         try {
+            Lectura lectura = new Lectura();
+            ArrayList<Xogador>lista = lectura.lerObxectos(fichero,",");
             fich = new FileWriter(nomeFich);
             escribir = new PrintWriter(nomeFich);
-            lectura.lerObxectos(fichero,",");
-
+            //Xogador x;
+            for(Xogador x: lista){
+                escribir.println(x.getNome());
+            }
         } catch (IOException e) {
             System.out.println("Error escritura 3.1"+e.getMessage());
         }finally {
