@@ -95,7 +95,6 @@ public class  Escritura {
             ArrayList<Xogador>lista = lectura.lerObxectos(fichero,",");
             fich = new FileWriter(nomeFich);
             escribir = new PrintWriter(nomeFich);
-            //Xogador x;
             for(Xogador x: lista){
                 escribir.println(x.getNome());
             }
