@@ -1,6 +1,6 @@
 package com.programacion.ExemploPolimorfismo;
 
-public class Persoa {
+public abstract class Persoa {
     private String nome;
     private int idade;
 
@@ -35,4 +35,6 @@ public class Persoa {
                 ", idade=" + idade +
                 '}';
     }
+
+    public abstract void amosar();
 }
