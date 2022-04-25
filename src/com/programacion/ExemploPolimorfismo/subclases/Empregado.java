@@ -27,4 +27,9 @@ public class Empregado extends Persoa {
                 "soldo=" + soldo +
                 '}';
     }
+
+    @Override
+    public void amosar() {
+
+    }
 }

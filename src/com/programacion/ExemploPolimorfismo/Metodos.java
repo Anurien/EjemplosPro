@@ -10,8 +10,7 @@ public class Metodos {
 
     public static ArrayList<Persoa> amosar1(ArrayList<Persoa> lista) {
         for (Persoa l : lista) {
-            System.out.println(l.getIdade() + l.getIdade());
-
+            System.out.println(l);
         }
         return lista;
     }

@@ -27,4 +27,9 @@ public class Tenista extends Persoa {
                 "partidosXogados=" + partidosXogados +
                 '}';
     }
+
+    @Override
+    public void amosar() {
+
+    }
 }
